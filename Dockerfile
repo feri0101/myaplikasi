@@ -1,4 +1,4 @@
-FROM tomcat:8
+FROM tomcat:jre8-alpine
 LABEL app=my-app
 COPY target/*.war /usr/local/tomcat/webapps/myweb.war
 # dummy commit
