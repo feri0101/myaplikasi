@@ -1,0 +1,10 @@
+services:
+  tomcat:
+    container_name: kdegithub
+    restart: always
+    image: tomcat:jre8-alpine
+    volumes:
+    - /opt/oksoft/POS:/usr/local/tomcat/webapps
+    - /opt/lisensi:/opt
+    ports:
+    - "9230:8080"
